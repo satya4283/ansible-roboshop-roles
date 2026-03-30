@@ -1,5 +1,5 @@
 - name: Configure {{component}} 
-  hosts: "{{component}}"
+  hosts: "{{ component }}"
   become: yes
   roles: # this will automatically calls roles in current working directory
-  - component
+  - "{{ component }}"
