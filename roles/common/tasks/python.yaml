@@ -1,7 +1,7 @@
 - name: Installing python3 packages
   ansible.builtin.pip:
     name: "{{item}}"
-    state: installed
+    state: present
   loop:
   - python3 
   - gcc 
