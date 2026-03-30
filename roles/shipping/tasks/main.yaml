@@ -1,14 +1,13 @@
-
-- name: maven setup
-  include_role:
-    name: common
-    tasks_from: maven 
-
 - name: app setup
   include_role:
     name: common
     tasks_from: app-setup
 
+- name: maven setup
+  include_role:
+    name: common
+    tasks_from: maven 
+    
 - name: import data
   community.mysql.mysql_db:
     name: all
