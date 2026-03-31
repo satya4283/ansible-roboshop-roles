@@ -30,7 +30,6 @@
   register: catalogue_output
   ignore_errors: true 
 
-
 - name: print the catalogue output 
   ansible.builtin.debug:
     msg: "{{ catalogue_output }}"
@@ -50,4 +49,4 @@
   - deployment
   include_role:
     name: common
-    tasks_from: app-setup
+    tasks_from: deployment
