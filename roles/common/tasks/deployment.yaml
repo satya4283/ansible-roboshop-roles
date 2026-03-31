@@ -15,7 +15,7 @@
 
 - name: download the application
   ansible.builtin.unarchive:
-    src: https://roboshop-artifacts.s3.amazonaws.com/{{ component }}-{{ app_version }}.zip
+    src: "https://roboshop-artifacts.s3.amazonaws.com/{{ component }}-{{ app_version }}.zip"
     dest: /app
     remote_src: yes
 
@@ -23,7 +23,7 @@
   community.general.npm:
     path: /app
 
-- name: Restart the {{ component }}
+- name: "Restart the {{ component }}""
   ansible.builtin.service:
     name: "{{ catalogue }}"
     state: restarted 
