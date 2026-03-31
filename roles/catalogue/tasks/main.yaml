@@ -44,7 +44,7 @@
     name: common
     tasks_from: systemd
 
-- name: Deployment
+- name: Deployment setup
   tags:
   - deployment
   import_role:
