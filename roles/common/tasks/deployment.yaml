@@ -25,5 +25,5 @@
 
 - name: "Restart the {{ component }}"
   ansible.builtin.service:
-    name: "{{ catalogue }}"
+    name: "{{ component }}"
     state: restarted 
