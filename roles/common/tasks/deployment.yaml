@@ -23,7 +23,7 @@
   community.general.npm:
     path: /app
 
-- name: "Restart the {{ component }}""
+- name: "Restart the {{ component }}"
   ansible.builtin.service:
     name: "{{ catalogue }}"
     state: restarted 
